@@ -9,7 +9,7 @@
     <style>
        
        nav {
-            background-color: thistle;
+            background-color: burlywood;
             padding: 1px;
             height: 50px;
             justify-items: center;
@@ -26,8 +26,8 @@
                 "main main main main main"
                 "main main main main main"
                 "main main main main main "
-                "facebook mask2 mask3 mask3"
-                "twitter mask2 mask3 mask3"
+                "facebook mask2 mask3 mask3 mask"
+                "twitter mask2 mask3 mask3 mask"
                 "fam fam joker papa hair"
                 "fedora sup sup candy boy"
                 "fedora santa purp purp green "
@@ -35,7 +35,11 @@
                 
 
         }
-
+        footer{
+            background-color: burlywood;
+        font-size: 25px;
+        }
+    
         .main {
             grid-area: main;
             grid-column: 1/6;
@@ -44,18 +48,21 @@
 
         .facebook {
             grid-area: facebook;
-            grid-column:1 ;
-            grid-row:5 ;
+            grid-column:1/2 ;
+            grid-row:5/6 ;
         }
 
         .twitter {
             grid-area: twitter;
-            grid-column:1 ;
-            grid-row: 6;
+            grid-column:1/2 ;
+            grid-row: 6/7;
         }
 
         .mask {
             grid-area: mask;
+        grid-column: 5/6;
+        grid-row: 5/7;
+        
         }
 
         .fam {
@@ -124,10 +131,14 @@
 
         .mask2 {
             grid-area: mask2;
+        grid-column: 2/3;
+        grid-row: 5/7;
         }
 
         .mask3 {
             grid-area: mask3;
+        
+        
         }
 
         .text {
@@ -157,8 +168,8 @@
 
 <body>
     <nav>
-        <h4>&#160;&#160;&#160;&#160;Enter Site&#160;&#160;&#160;My Account&#160;&#160;&#160;Track
-            Orders&#160;&#160;&#160;Contact Info</h4>
+        <h5>&#160;&#160;&#160;&#160;Enter Site&#160;&#160;&#160;My Account&#160;&#160;&#160;Track
+            Orders&#160;&#160;&#160;Contact Info</h5>
     </nav>
     <div class="container">
         <div class="main"><img src="images/main.png"></div>
@@ -182,11 +193,10 @@
         <div class="gobs"><img src="images/gobs.png"></div>
         <div class="mask2"><img src="images/mask2.png"></div>
         <div class="mask3"><img src="images/mask3.png"></div>
-        <div class="text">Costume Expressions<br>3411 Torrence Dr.<br>Rockville, MD 20850</div>
-
-
     </div>
+    <footer>Costume Expressions 3411 Torrence Dr. Rockville, MD 20850</footer>
 
+    
 </body>
 
 </html>
